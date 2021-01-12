@@ -69,7 +69,7 @@ export class myQApi {
 
     // Set our myQ headers. We randomly generate a user agent since the myQ API seems to regularly blacklist certain ones.
     this.headers.set("Content-Type", "application/json");
-    this.headers.set("User-Agent", crypto.randomBytes(10).toString("hex"));
+    this.headers.set("User-Agent", "myQ/19569 CFNetwork/1107.1 Darwin/19.0.0");
     this.headers.set("ApiVersion", this.ApiVersion());
     this.headers.set("BrandId", "2");
     this.headers.set("Culture", "en");
